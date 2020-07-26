@@ -94,11 +94,10 @@ public class Ex6_Loops {
 	private static void doCoolThingsWithThisNumber(int numX) {
 		System.out.println("\tdoCoolThingsWithThisNumber was Activated (" + numX + ")");
 		// 1 -> number of digits:
-		String numXstring = "" + numX;
-		System.out.println("The length of " + numX + " is: " + numXstring.length());
+		System.out.println("The length of " + numX + " is: " + String.valueOf(numX).length());
 		// 2 -> the leftest digit:
-		System.out.println("The first left digit of " + numX + " is: " + numXstring.charAt(0));
-		// 3 -> sum of the whole number’s digits:
+		System.out.println("The first left digit of " + numX + " is: " + String.valueOf(numX).charAt(0));
+		// 3 -> sum of the whole numberâ€™s digits:
 		int sumOfNumX = 0, numXcopy = numX;
 		while (numXcopy != 0) {
 			int digit = numXcopy % 10;
